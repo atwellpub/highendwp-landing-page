@@ -291,6 +291,13 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
                 padding:0px;
                 width:80%;
             }
+            
+            .header-headline {
+                text-align: center;
+	        margin-left: auto;
+	        margin-right: auto;
+	        width: 129%;
+            }
         }
 
     </style>
