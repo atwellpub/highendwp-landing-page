@@ -137,6 +137,9 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
             border-bottom: solid 3px #00aeef;
             letter-spacing: 0px;
             border-bottom-color: #00aeef
+            padding-left: 30px;
+            padding-right: 30px;
+
         }
 
         #footer-cta-area .container {
@@ -169,11 +172,11 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
         }
 
         header {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
             padding-top: 20px;
             padding-bottom: 16px;
-            border-bottom: 1px solid #81d742;
+            border-bottom: 2px solid #81d742;
         }
 
         .header-headline {
@@ -182,13 +185,30 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
             margin-left: 137px;
         }
 
-        .header-headline h1, h2, h3 {
+        .header-headline h1 {
             font-family: "Open Sans", sans-serif !important;
             font-size: 30px !important;
             line-height: 36px !important;
             letter-spacing: 0px !important;
             font-weight:;
         }
+
+        .header-headline h2 {
+            font-family: "Open Sans", sans-serif !important;
+            font-size: 20px !important;
+            line-height: 36px !important;
+            letter-spacing: 0px !important;
+            font-weight:;
+        }
+
+        .header-headline h3 {
+            font-family: "Open Sans", sans-serif !important;
+            font-size: 15px !important;
+            line-height: 36px !important;
+            letter-spacing: 0px !important;
+            font-weight:;
+        }
+
 
         #headline {
             padding: 20px;
@@ -201,18 +221,18 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
 
         #left-column {
             padding-left: 80px;
-            padding-right: 80px;
-            width: 62%;
+            padding-right: 90px;
+            width: 50%;
             text-align: left;
         }
 
         #right-column {
-            width: 23%;
+            width: 35%;
             text-align: left;
         }
 
         #sub-headline {
-            text-align: center;
+            text-align: left;
         }
 
         .inbound-field input[type=text], .inbound-field input[type=url], .inbound-field input[type=email], .inbound-field input[type=tel], .inbound-field input[type=number], .inbound-field input[type=password] {
@@ -223,7 +243,7 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
             background-color: #81d742;
             border: 1px solid #000;
             color: #fff;
-            width: 100%;
+            width: 45%;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
@@ -255,6 +275,24 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
         .nav-link:last-child .sep{
             display:none;
         }
+
+        .header-call-to-action {
+            width: 295px;
+        }
+
+        /* Portrait and Landscape */
+        @media only screen
+        and (min-device-width: 100px)
+        and (max-device-width: 1024px)
+        and (-webkit-min-device-pixel-ratio: 1) {
+            #right-column, #left-column {
+                margin-left:auto;
+                margin-right:auto;
+                padding:0px;
+                width:80%;
+            }
+        }
+
     </style>
     <header id="landing-page-header" class="">
 
@@ -268,7 +306,7 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
 
 
 				<span class="hb-dark-logo hb-visible-logo hb-logo-wrap">
-					<img src="<?php echo $logo_image; ?>" style="max-height:318px;" class="default" alt="">
+					<img src="https://www.spotlightbusinessbranding.com/wp-content/uploads/2015/12/rsz_sl-logo.png" style="max-height:318px;" class="default" alt="">
 				</span>
 				<span class="tagline">
 					<?php echo $tagline; ?>
@@ -378,7 +416,7 @@ $call_to_action_ = get_field("call_to_action_", $post_id);
                     endwhile;
                     ?>
 
-                <?php
+                    <?php
                 } /* end if have_rows(footer_menu_link) */
                 /* End footer_menu_link Repeater Output */
                 ?>
